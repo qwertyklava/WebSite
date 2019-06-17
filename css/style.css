@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+	background-color: black;
+	background-image: url(../images/background-texture.png);
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+}
+
+.container {
+	box-shadow: 0 0 25px rgba(0, 0, 0, 1);
+	height: 80%;
+	margin: auto;
+	width: 65%;
+}
+
+.block {
+	position: relative;
+	height: 700px;
+	width: 100%;
+}
+
+.block div {
+	color: white;
+	display: block;
+	float: left;
+	height: 100%;
+}
+
+.nav {
+	width: 45%;
+}
+
+.navItem {
+	padding: 25px 15px;
+	text-align: center;
+	width: 40%;
+}
+
+.navItem a {
+	padding: 25px 15px;
+	text-decoration: none;
+	font-size: 18px;
+	color: #000000;
+	outline: none;
+}
+
+.services {
+	list-style-type: none;
+}
+
+.services li::before {
+	content: "> ";
+}
+
+.left {
+	top: 0;
+	left: 0;
+}
+
+.right {
+	top: 0;
+	right: 0;
+}
+
+.n1 {
+	content: url(../images/dark_block_1.png);
+	width: 50%;
+}
+
+.n2 {
+	content: url(../images/light_block_2.png);
+	position: absolute;
+	width: 75%;
+}
+
+.n3 {
+	content: url(../images/dark_block_3.png);
+	position: absolute;
+	width: 75%;
+}
+
+.col img {
+	position: absolute;
+	height: 700px;
+	z-index: -1;
+}
+
+.content {
+	padding: 25px 50px;
+	position: absolute;
+	width: 40%;
+}
+
+.block h2 {
+	font-weight: 100;
+	font-size: 32px;
+}
+
+#block2 h2, #block3 h2 {
+	text-align: center;
+}
+
+#block1 h2 {
+	color: #c56b56;
+}
+
+#block2 h2 {
+	color: #292a2a;
+}
+
+#block3 h2 {
+	color: #ffffff;
+}
+
+#block2 ul {
+	color: #292a26;
+}
+
+#block3 ul {
+	color: #ffffff;
+	list-style-type: none;
+}
+
+#block3 li {
+	padding-bottom: 25px;
+}
+
+#block1, #block2, #block3 span {
+	font-size: 18px;
+	color: #ffffff;
+}
+
+#btnTop {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	background-color: #ffffff;
+	color: #292a2a;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 15px;
+	box-shadow: 0 0 25px rgba(0, 0, 0, 1);
+}
+
+@media only screen and (max-width: 1024px) {
+	.block h2, .navItem a {
+		font-weight: 450;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.n1 {
+		width: 50%;
+	}
+
+	.n2 {
+		width: 75%;
+	}
+
+	.n3 {
+		width: 65%;
+	}
+}
